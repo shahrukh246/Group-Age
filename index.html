@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Group</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+
+let age = prompt("Enter your age:");
+
+
+age = parseFloat(age);
+
+
+if (isNaN(age) || age < 0) {
+    alert("Invalid input. Please enter a valid age.");
+} else {
+
+    let ageGroup;
+
+   if (age >= 0 && age <= 12) {
+        ageGroup = "Child";
+    } else if (age >= 13 && age <= 19) {
+        ageGroup = "Teenager";
+    } else if (age >= 20 && age <= 64) {
+        ageGroup = "Adult";
+    } else if (age >= 65) {
+        ageGroup = "Senior";
+    }
+
+
+    alert("You belong to the " + ageGroup + " age group.");
+}
+
+    </script>
+</body>
+</html>
